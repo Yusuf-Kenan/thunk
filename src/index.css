@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: sans-serif;
+  background-color: #242424;
+  color: rgba(255, 255, 255);
+  height: 100vh;
+}
+
+h1{
+  font-size: 40px;
+}
+
+button{
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: orangered;
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+button:hover{
+  border: 1px solid orangered;
+}
+
+.chat-bot{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+  padding: 50px;
+}
+
+.chat-bot h1{
+  text-align: center;
+}
+
+.chat{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.list{
+  background-color: gray;
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: auto;
+}
+.prompt{
+  align-self: flex-end;
+  background-color: teal;
+  padding: 5px 20px;
+  border-radius: 8px 8px 0 8px;
+  max-width: 70%;
+  font-size: 20px;
+}
+
+.answer{
+  align-self: flex-start;
+  background-color: teal;
+
+  padding: 5px 20px;
+  border-radius: 8px 8px 8px 0 ;
+  max-width: 70%;
+  font-size: 20px;
+}
+
+.chat-img {
+  border: 5px solid teal;
+  max-width: 250px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.form input{
+  width: 70%;
+  height: 50px;
+  padding: 5px 20px;
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 40px;
+}
+
+.form button{margin-bottom: 40px;}
